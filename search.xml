@@ -8,7 +8,7 @@
       <link href="/2024/02/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
       <url>/2024/02/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<h2 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h2><p>这是我写的第一篇博客，主要是用于验证自己的博客搭建是否成功，然后是想记录一下搭建博客的过程，其中遇到的问题，解决的方法，和自己在搭建博客中的心得体会。</p><p>很早有自己搭建博客的想法，自己搭建一个博客可以直接记录自己的日常生活，学习心得体会。虽然这些在自己电脑上也可以自己写，但是只能自己一个人看，不方便展示；而搭建一个博客，不仅文章上传可以分享给其他人查看，自己查看起来也更有成就感。</p><p>在最开始，我想的是搭建一个自定义的博客，很多功能能自己定义，但这个难度有点大，需要前端到后端一起实现，现阶段的我还难以完成。前期我也找了一个不错的教程<a href="https://www.longair.cn/article/?id=2">Vue3+TypeScript+Django Rest Framework 搭建个人博客</a>，是通过django框架和前端搭建实现的，但是自己上起手来还是比较困难，所以我便采用了更为简单的方法搭建博客，使用hexo框架，选用主题Butterfly实现<a href="https://blog.csdn.net/qq_58608526/article/details/124652412?spm=1001.2014.3001.5506">hexo+Butterfly博客教程</a>这篇文章写的非常详细，大家跟着操作也都能实现。<br>除了这篇文章也推荐大家去查看<a href="https://hexo.io/zh-cn/">hexo官方文档</a>和<a href="https://butterfly.js.org/">Butterfly官方文档</a>。如果不想看文档，也可以观看<a href="https://www.bilibili.com/video/BV1aV411p7Bc/?spm_id_from=333.788&vd_source=b63df671d311b520be1035e151686519">B站视频教程</a>.</p><p>上述教程都很详细，这里我就不重复了，这里我讲一下我在具体操作实践中遇到的问题</p><ul><li>页面无法打开<br>  需要查看对应的yml文件末尾的deploy设置，查看branch设置是否为master,同时需要将对应的github仓库名设置为username.github.io仓库还必须为公开状态，这样才能成功映射。</li><li>中文乱码<br>  一开始网站的导航页都是英文，没有出现乱码，但当我把其中一些名称改为中文全部出现乱码，经检查发现是我使用的vscode采用的中文编码默认设置成了GBK，但网站中文一般默认采用UTF-8，只需将编码方式改回UTF-8重新保存即可解决。</li><li>更改无法实现<br>  一开始参考教程修改设置时发现好多设置不存在，自己的_config.yml内容怎么只有这么一点，后来经过仔细比对才发现每个对应的主题需要在博客根目录下单独建立一个主题对应的yml文件。</li><li>博客的标签分类内容空白<br>  给自己的文章添加tags与categories后在博客主页的对应导航无法找到自己添加的。但这不是自动添加到导航页的，需要自己在对应的index.md中添加相应标签才能实现。</li><li>设置的背景图片没有成功加载<br>  有时候自己在对应的yml文件中设置了背景图片，但是在执行hexo g和hexo s加载博客后没能展示。这是因为有些页面的图片不仅需要在yml文件修改配置，也需要在对应页面的front-mater中再次配置。</li></ul>]]></content>
       
       
       <categories>
@@ -23,19 +23,6 @@
             <tag> 搭建博客 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/02/07/hello-world/"/>
-      <url>/2024/02/07/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     

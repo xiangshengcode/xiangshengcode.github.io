@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>vue_learning</title>
+      <link href="/2024/02/22/vue-learning/"/>
+      <url>/2024/02/22/vue-learning/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue简介"><a href="#Vue简介" class="headerlink" title="Vue简介"></a>Vue简介</h2><ol><li>渐进式框架<br>灵活性，可以逐步集成，根据使用场景在不同页面使用</li><li>vue3新版本<br>涵盖vue2，新增体系</li><li>官方文档<br><a href="cn.vuejs.org">vue官方文档</a></li></ol><h2 id="Vue-API风格"><a href="#Vue-API风格" class="headerlink" title="Vue API风格"></a>Vue API风格</h2><ol><li>选项式API<br>data methods mounted</li><li>组合式API（更推荐）<br>代码量更少简洁，实现功能一样</li></ol><h2 id="开发前准备"><a href="#开发前准备" class="headerlink" title="开发前准备"></a>开发前准备</h2><ol><li>下载nodejs注意版本</li><li>执行npm init vue@latest</li><li>进入项目执行npm init</li><li>npm run dev 查看页面</li></ol><h2 id="Vue项目目录"><a href="#Vue项目目录" class="headerlink" title="Vue项目目录"></a>Vue项目目录</h2><ol><li>.vscode —vscode工具配置文件</li><li>node_modules —Vue项目运行依赖文件 npm install下载的</li><li>public —资源文件夹（游览器图标）</li><li>src —源码 写代码</li><li>.gitignore —git忽略文件</li><li>index.html 入口html文件</li><li>package.json —信息描述 版本依赖</li><li>README.md —注释文件</li><li>vite.config.js —Vue配置文件</li></ol><h2 id="Vue模板语法"><a href="#Vue模板语法" class="headerlink" title="Vue模板语法"></a>Vue模板语法</h2><ol><li>文本插值<br>双大括号引用对应的值<br>仅支持唯一（单行if else不行）表达式，拥有return返回值</li><li>原始html<br>想要插入html文件不使用双大括号，需要单独使用v-html插入<br>双大括号会解释为纯文本<pre><code>&lt;p v-html=&quot;&quot;&gt;&lt;/p&gt;</code></pre>v-html要写在第一个p中</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习心得 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>1天搞定SpringBoot+Vue全栈开发-学习笔记</title>
       <link href="/2024/02/18/1%E5%A4%A9%E6%90%9E%E5%AE%9ASpringBoot-Vue%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2024/02/18/1%E5%A4%A9%E6%90%9E%E5%AE%9ASpringBoot-Vue%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
